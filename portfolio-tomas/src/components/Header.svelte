@@ -5,9 +5,9 @@
   
   <nav class="bg-primary fixed w-full top-0 z-50 shadow-xl h-28 flex items-center text-background">
     <div class="flex justify-center w-full font-bold">
-      <a href="#projects" class="text-2xl hover:text-secondary mx-16 transition-all ">PROJECTS</a>
-      <a href="#home" class="text-2xl hover:text-secondary mx-16 transition-all ">HOME</a>
-      <a href="#about" class="text-2xl hover:text-secondary mx-16 transition-all">ABOUT</a>
+      <a href="#projects" class="text-xl hover:text-secondary mx-16 transition-all ">PROJECTS</a>
+      <a href="#home" class="text-xl hover:text-secondary mx-16 transition-all ">HOME</a>
+      <a href="#about" class="text-xl hover:text-secondary mx-16 transition-all">ABOUT</a>
     </div>
   </nav>
   
