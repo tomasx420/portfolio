@@ -1,0 +1,4 @@
+background - #F5F5F5 0 - grey
+#48CFCB
+#229799
+#424242
