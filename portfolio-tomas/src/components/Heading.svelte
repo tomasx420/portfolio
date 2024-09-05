@@ -3,9 +3,11 @@
     export let subheading = "On this website, you will learn about me and my projects. On this website, you will learn about me and my projects On this website, you will learn about me and my projects On this website, you will learn about me and my projects";
 </script>
 
-<div class="flex flex-col justify-center pt-8">
+<div class="flex flex-col justify-center pt-8 w-[600px]">
     <h1 class="mb-4 text-4xl f  ont-extrabold leading-none tracking-tight text-text md:text-5xl lg:text-6xl">
-        Welcome to my <span class="portfolio-animation">Portfolio</span><span class="cursor">|</span>
+        Welcome to my
+    <br>
+        <span class="portfolio-animation">Portfolio</span><span class="cursor">|</span>
     </h1>
     <p class="text-xl text-secondary pt-4">{subheading}</p>
 </div>
@@ -43,7 +45,7 @@
 
     @keyframes revealText {
         0%, 100% { color: #424242; } /* Start and end with Text and Headers color */
-        33% { color: #48CFCB; } /* Primary Buttons/Links color */
+        50% { color: #48CFCB; } /* Primary Buttons/Links color */
         66% { color: #F5F5F5; } /* Background color, consider if visible depending on background */
     }
 
