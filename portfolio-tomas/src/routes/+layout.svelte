@@ -2,38 +2,42 @@
   import "../app.css";
   import Header from "../components/Header.svelte";
   import Heading from "../components/Heading.svelte";
-  import Donut from "../components/Donut.svelte"; // Import the Donut component
+  import Donut from "../components/Donut.svelte";
+  import Waves from "../components/Waves.svelte";  // Import the Waves component
 </script>
 
 <Header />
 
-<div
-  id="home"
-  class="min-h-screen bg-background flex flex-col items-center justify-center p-8"
->
-  <div id="home" class="min-h-screen bg-background flex justify-center p-8 mt-8 flex items-start">
-    <div class="flex w-full max-w-7xl space-x-8">
-      <!-- Left Side: Welcome Text -->
-      <div class="flex-1 pr-24 pl-8 mt-36">
-        <Heading
-          heading="WELCOME TO MY PORTFOLIO"
-          subheading="On this website, you will learn about me and my projects. On this website, you will "
-        />
-      </div>
+<!-- Main Section with Heading and Donut -->
+<main id="home" class="min-h-screen bg-background flex flex-col items-center justify-center mt-8 pt-2">
+  <!-- Flex Container for Heading and Donut -->
+  <div class="flex w-full max-w-7xl space-x-40">
+    
+    <!-- Left Side: Welcome Text -->
+    <div class="flex-1 pr-24 pl-8 mt-8">
+      <Heading
+        heading="WELCOME TO MY PORTFOLIO"
+        subheading="On this website, you will learn about me and my projects. On this website, you will "
+      />
+    </div>
 
-      <!-- <div class="w-52 h-52 bg-text flex items-center justify-center absolute top-[335px] left-[1065px] overflow-hidden z-0">
-        s
-      </div> -->
+    <!-- Right Side: Donut -->
     <div class="relative w-48 h-48 bg-black flex items-center justify-center pr-52">
-      <!-- Donut positioned inside the black background -->
       <Donut />
     </div>
   </div>
-</div>
-</div>
 
-<main class="pt-20">
+  <!-- Section for Waves (placed below heading and donut) -->
+  <section class="w-full mt-52">
+
+
+    <Waves />
+    <div class="content flex bg-primary w-full h-52">
+    </div>
+  </section>
+
+
+
+  <!-- Slot for additional dynamic content (inside the main content area) -->
   <slot />
 </main>
-
-<slot />

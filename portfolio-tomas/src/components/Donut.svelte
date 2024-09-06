@@ -68,7 +68,7 @@
                     st * cA -
                     cp * ct * sB)
               );
-  
+
               // Update ASCII char and depth if conditions are met
               if (y < height && y >= 0 && x >= 0 && x < width && D > z[o]) {
                 z[o] = D;
@@ -94,8 +94,11 @@
     });
   </script>
   
+                                                                               
+                                                                               
+                                                                              
   <!-- Donut -->
-  <pre bind:this={donutRef} class="absolute mt-[410px] ml-[200px] color-gradient"></pre>
+  <pre bind:this={donutRef} class="absolute mt-[190px] ml-[200px] color-gradient"></pre>
   
   <style>
     pre {
@@ -106,7 +109,6 @@
     font-weight: bold; /* Make the text bold */
     overflow: hidden;
     color: black;
-    text-shadow: 0 0 5px #48CFCB, 0 0 10px #48CFCB, 0 0 15px #48CFCB, 0 0 20px #48CFCB; /* Glowing effect */
     animation: glow 1.5s ease-in-out infinite alternate;
 }
 
