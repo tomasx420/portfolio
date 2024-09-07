@@ -1,5 +1,3 @@
-    <!--Hey! This is the original version
-of Simple CSS Waves-->
 
 <div class="header">
     <!--Waves Container-->
