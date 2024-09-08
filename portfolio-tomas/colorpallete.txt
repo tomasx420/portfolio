@@ -1,4 +1,4 @@
-background - #F5F5F5 0 - grey
-#48CFCB
-#229799
-#424242
+Background: #F5F5F5
+Text and Headers: #424242
+Primary Buttons/Links: #48CFCB
+Secondary Buttons/Highlights: #229799
