@@ -8,7 +8,7 @@
 </script>
 
 <!-- Main Container for the About Me section -->
-<div class="bg-white shadow-lg rounded-lg p-6 pt-8 mt-8 max-w-xl mx-auto">
+<div class="bg-white rounded-lg p-6 pt-8 mt-8 max-w-xl mx-auto glow-gradient">
 	<!-- Dynamic Content Sections -->
 	{#if currentSection === "intro"}
 		<p class="text-lg text-gray-700 leading-relaxed">
@@ -29,12 +29,12 @@
 	{/if}
 
 	<!-- Styled Horizontal Line -->
-    <!-- <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
-     -->
+	<hr class="my-6 border-t-1 border-gray-200 w-full max-w-xl mx-auto">
+
 	<!-- Button Controls Below the Paragraph -->
-	<div class="flex justify-center space-x-4 mt-12">
+	<div class="flex justify-center space-x-8 mt-12 font-bold">
 		<button
-			class={`py-2 px-4 rounded-lg relative transition-all focus:outline-none ${currentSection === "intro" ? 'bg-primary glow-effect' : 'bg-gray-300 hover:bg-gray-400'}`}
+			class={`font-bold py-2 px-4 rounded-lg relative transition-all focus:outline-none ${currentSection === "intro" ? 'bg-primary glow-effect' : 'bg-gray-300 hover:bg-gray-400'}`}
 			on:click={() => showSection("intro")}
 		>
 			Short Intro
@@ -54,12 +54,23 @@
 	</div>
 </div>
 
-<!-- Custom Glow Effect CSS -->
+<!-- Custom Gradient Glow Effect CSS -->
 <style>
+	/* Gradient glow around the entire paragraph block */
+
+
 	.glow-effect {
 		box-shadow: 0 0 15px rgba(72, 207, 203, 0.8), 0 0 30px rgba(72, 207, 203, 0.5);
 	}
 
+	/* Faint, rounded horizontal line */
+	hr {
+		border: none;
+		border-top: 1px solid rgba(100, 100, 100, 0.2);
+		width: 100%;
+	}
+
+	/* Hover effects for the buttons */
 	button:hover {
 		transform: scale(1.1);
 		transition: transform 0.2s ease-in-out;
