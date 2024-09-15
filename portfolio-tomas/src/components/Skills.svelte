@@ -7,7 +7,7 @@
 					name: "JavaScript",
 					icon: "fa-brands fa-js-square",
 					description:
-						"Build dynamic web apps using modern JavaScript, integrating APIs, GPS, and maps.",
+						"Build dynamic web apps using modern JavaScript, integrate APIs, GPS, and maps.",
 					years: "3 years",
 				},
 				{
@@ -21,7 +21,7 @@
 					name: "Python",
 					icon: "fa-brands fa-python",
 					description:
-						"Conduct data analysis and create complex visualizations using Python, with experience in machine learning projects.",
+						"Conduct data analysis and create complex visualizations using Python, with knowledge in machine learning projects.",
 					years: "1 year",
 				},
 				{
@@ -55,6 +55,24 @@
 					icon: "fa-solid fa-layer-group",
 					description:
 						"Build full-stack websites using Laravel's monolithic architecture and manage databases.",
+					years: "1 year",
+				},
+			],
+		},
+        {
+			name: "DevOps & Tools",
+			skills: [
+				{
+					name: "Git",
+					icon: "fa-solid fa-code-branch",
+					description: "Version control with Git, manage repositories, workflows, and set up CI/CD pipelines using GitHub Actions.",
+					years: "2 years",
+				},
+				{
+					name: "Docker",
+					icon: "fa-brands fa-docker",
+					description:
+						"Containerize websites and databases, deployg and manage containers for efficient hosting.",
 					years: "1 year",
 				},
 			],
@@ -110,13 +128,13 @@
 					years: "4+ years",
 				},
 			],
-		},
+		}
 	];
 </script>
 
 <section class="w-full max-w-[1800px] mx-auto px-4 py-16 mt-8">
 	<div
-		class="bg-white shadow-lg rounded-lg overflow-hidden bg-background-second"
+		class="bg-white shadow-lg rounded-lg overflow-hidden bg-backgroundsecond"
 	>
 		<!-- Centralized "I can..." heading at the top -->
 		<h2 class="text-center text-3xl font-bold mt-8 text-secondary">I can...</h2>
@@ -132,7 +150,7 @@
 				>
 					{#each category.skills as skill}
 						<div
-							class="bg-white rounded-lg p-4 flex flex-col justify-between transition-all duration-300 ease-in-out hover:shadow-md"
+							class="bg-white rounded-lg p-4 flex flex-col justify-between transition-all duration-300 ease-in-out hover:shadow-2xl hover:scale-105"
 						>
 							<div class="flex items-center space-x-3 mb-2">
 								<i class="{skill.icon} text-2xl" style="color: #48CFCB;"></i>
@@ -155,4 +173,7 @@
 
 <style>
 	/* Add any additional Tailwind customizations if needed */
+	.hover\:scale-105:hover {
+		transform: scale(1.05);
+	}
 </style>
