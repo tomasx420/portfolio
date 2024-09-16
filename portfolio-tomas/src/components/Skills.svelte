@@ -134,7 +134,7 @@
 
 <section class="w-full max-w-[1800px] mx-auto px-4 py-16 mt-8">
 	<div
-		class="bg-white shadow-lg rounded-lg overflow-hidden bg-backgroundsecond"
+		class="bg-white shadow-lg rounded-lg overflow-hidden"
 	>
 		<!-- Centralized "I can..." heading at the top -->
 		<h2 class="text-center text-3xl font-bold mt-8 text-secondary">I can...</h2>
@@ -146,11 +146,11 @@
 			>
 				<h3 class="text-2xl font-bold mb-4 text-secondary">{category.name}</h3>
 				<div
-					class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+					class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4"
 				>
 					{#each category.skills as skill}
 						<div
-							class="bg-white rounded-lg p-4 flex flex-col justify-between transition-all duration-300 ease-in-out hover:shadow-2xl hover:scale-105"
+							class="bg-white rounded-lg p-4 flex flex-col justify-between shadow-lg transition-all duration-300 ease-in-out hover:shadow-2xl hover:scale-105"
 						>
 							<div class="flex items-center space-x-3 mb-2">
 								<i class="{skill.icon} text-2xl" style="color: #48CFCB;"></i>

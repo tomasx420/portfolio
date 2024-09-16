@@ -3,17 +3,15 @@ export default {
 	content: ["./src/**/*.{html,js,svelte,ts}"],
 	theme: {
 		extend: {
-			fontFamily: {
-				sans: ["Archivo", "sans-serif"],
-			},
-
 			colors: {
 				background: "#F5F5F5", //light grey
-				backgroundsecond: "#E0E0E0",
 				text: "#424242", //dark grey
 				primary: "#48CFCB", //turquoise
 				secondary: "#229799", //dark turquoise
 			},
+      fontFamily: {
+				sans: ["Archivo", "sans-serif"],
+			}
 		},
 		dropShadow: {
 			glow: [
