@@ -9,6 +9,7 @@
 	import ImageSlideshow from "../components/ImageSlideshow.svelte";
 	import Skills from "../components/Skills.svelte";
 	import Swot from "../components/Swot.svelte";
+	import Projects from "../components/Projects.svelte";
 </script>
 
 <Header />
@@ -35,7 +36,7 @@
 	<section class="w-full mt-72 relative">
 		<Waves />
 	</section>
-
+  
 	<!-- Gradient div -->
 	<div id="about" class="content flex bg-primary w-full h-80 relative bg-gradient-to-b from-primary to-background"></div>
 
@@ -64,12 +65,19 @@
 		<Swot/>
 	  </section>
 
-	  <section class="w-full mt-52 text-primary relative text-lg">
+	  <section id='skills' class="w-full mt-52 text-primary relative text-lg">
 		<div class="flex justify-center text-text mt-48">
 			<SecondaryHeading heading="Technical Skills" />
 		  </div>
 
 		<Skills/>
+		</section>
+
+		<section id="projects" class="w-full bg-gradient-to-b from-background to-primary">
+			<div class="flex justify-center text-text mt-32 mb-24">
+				<SecondaryHeading heading="Projects" />
+			  </div>
+		<Projects />
 		</section>
 
 	<p class="mt-52 pt-52">labas</p>

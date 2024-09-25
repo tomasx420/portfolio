@@ -98,7 +98,7 @@
                                                                                
                                                                               
   <!-- Donut -->
-  <pre bind:this={donutRef} class="absolute mt-[190px] ml-[200px] color-gradient"></pre>
+  <pre bind:this={donutRef} class="absolute mt-[190px] ml-[200px] sm:ml-[100px] md:ml-[300px] color-gradient"></pre>
   
   <style>
     pre {

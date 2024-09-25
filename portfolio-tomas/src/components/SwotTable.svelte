@@ -9,7 +9,7 @@
   ];
 
   const weaknesses = [
-    "I occasionally struggle with nervousness in certain public speaking situations",
+    "I occasionally struggle with anxiety in certain public speaking situations",
     "I find heated disagreements difficult to manage and often withdraw",
     "I strive for perfection, sometimes slowing down task completion",
     "I hesitate to delegate tasks unless I'm confident in my teammates' abilities"
