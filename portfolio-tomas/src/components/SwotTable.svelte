@@ -9,7 +9,6 @@
   ];
 
   const weaknesses = [
-    "I occasionally struggle with anxiety in certain public speaking situations",
     "I find heated disagreements difficult to manage and often withdraw",
     "I strive for perfection, sometimes slowing down task completion",
     "I hesitate to delegate tasks unless I'm confident in my teammates' abilities"
@@ -93,7 +92,7 @@
           <div class="h-full bg-background p-6 flex flex-col">
             <h3 class="text-secondary text-2xl font-semibold mb-4">How I Improve  </h3>
             <p class="text-text flex-grow">
-              I think that recognizing these weaknesses is the first step toward improvement. I've recognized that building confidence (e.g., for public speaking) starts with taking care of myself and viewing myself in a more positive light. I'm working on staying present in difficult conversations, rather than stepping away. I’m also finding a balance between perfectionism and efficiency, and improving my delegation by learning to trust others while providing clear guidance
+              I think that recognizing these weaknesses is the first step toward improvement. I'm working on staying present in difficult conversations, rather than stepping away. I’m also finding a balance between perfectionism and efficiency, and improving my delegation by learning to trust others while providing clear guidance
           </div>
         </div>
       </div>
