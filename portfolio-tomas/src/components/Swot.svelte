@@ -20,11 +20,11 @@
   <div class="relative z-10">
     <!-- Secondary Heading -->
     <div class="flex justify-center text-text mt-48">
-      <SecondaryHeading heading="My Strengths and Weaknesses" />
+      <SecondaryHeading heading="My Strengths and Weaknesses"/>
     </div>
 
     <!-- SWOT Table -->
-    <div class="flex justify-center mt-12 text-text">
+    <div class="flex justify-center mt-20 text-text">
       <SwotTable />
     </div>
   </div>

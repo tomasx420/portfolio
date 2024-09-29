@@ -132,7 +132,7 @@
 	];
 </script>
 
-<section class="w-full max-w-[1800px] mx-auto px-4 py-16 mt-8">
+<section class="w-full max-w-[1800px] mx-auto px-4 py-16 mt-20">
 	<div
 		class="bg-white shadow-lg rounded-lg overflow-hidden"
 	>

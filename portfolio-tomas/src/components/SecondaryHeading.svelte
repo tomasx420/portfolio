@@ -1,11 +1,12 @@
 <script>
     export let heading = "";  // You can pass the heading as a prop
     export let id = ""; // You can pass the id as a prop
+    export let customClass = ""; // You can pass the class as a prop
   </script>
   
   <h2 
   id="{id}"
-  class="text-5xl font-semibold text-center text-gray-700 my-8">
+  class="text-5xl font-semibold text-center text-gray-700 my-8 {customClass}">
     {heading}
   </h2>
   

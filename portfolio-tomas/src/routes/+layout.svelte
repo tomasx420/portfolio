@@ -46,7 +46,7 @@
 	</div>
 
 	<!-- About Me Component with Buttons -->
-	<section id="about" class="w-full flex justify-center items-start mt-24">
+	<section id="about" class="w-full flex justify-center items-start mt-20">
 		<div class="flex w-full max-w-7xl space-x-32 mt-12 items-stretch">
 			<!-- Left Side: About Me Text and Buttons -->
 			<div class="flex-1 bg-white shadow-xl rounded-lg p-6 min-h-custom">
@@ -74,7 +74,7 @@
 		</section>
 
 		<section id="projects" class="w-full bg-gradient-to-b from-background to-primary">
-			<div class="flex justify-center text-text mt-32 mb-24">
+			<div class="flex justify-center text-text mt-32 mb-20">
 				<SecondaryHeading heading="Projects" />
 			  </div>
 		<Projects />
