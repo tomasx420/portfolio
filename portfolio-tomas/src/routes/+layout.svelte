@@ -10,77 +10,99 @@
 	import Skills from "../components/Skills.svelte";
 	import Swot from "../components/Swot.svelte";
 	import Projects from "../components/Projects.svelte";
+	import Contact from "../components/Contact.svelte";
 </script>
 
 <Header />
-
-<!-- Main Section with Heading and Donut -->
-<main class="min-h-screen bg-background flex flex-col items-center justify-center mt-8 pt-2">
-	<!-- Flex Container for Heading and Donut -->
-	<div class="flex w-full max-w-7xl space-x-40 mt-56">
-		<!-- Left Side: Welcome Text -->
-		<div class="flex-1 pr-24 pl-8 mt-8">
-			<Heading
-				heading="WELCOME TO MY PORTFOLIO"
-				subheading="On this website, you will learn about me and my projects."
-			/>
-		</div>
-
-		<!-- Right Side: Donut -->
-		<div class="relative w-48 h-48 flex items-center justify-center pr-52">
-			<Donut />
-		</div>
-	</div>
-
-	<!-- Section for Waves (placed below heading and donut) -->
-	<section class="w-full mt-72 relative">
-		<Waves />
-	</section>
-  
-	<!-- Gradient div -->
-	<div id="about" class="content flex bg-primary w-full h-80 relative bg-gradient-to-b from-primary to-background"></div>
-
-	<!-- About Me Section with Heading -->
-	<div id="about" class="mt-8 text-text">
-		<SecondaryHeading heading="About Me" />
-	</div>
-
-	<!-- About Me Component with Buttons -->
-	<section id="about" class="w-full flex justify-center items-start mt-20">
-		<div class="flex w-full max-w-7xl space-x-32 mt-12 items-stretch">
-			<!-- Left Side: About Me Text and Buttons -->
-			<div class="flex-1 bg-white shadow-xl rounded-lg p-6 min-h-custom">
-				<AboutMe />
+<main class='bg-background'>
+	<slot />
+	<!-- Main Section with Heading and Donut -->
+	<section
+		class="min-h-screen bg-background flex flex-col items-center justify-center mt-8 pt-2"
+	>
+		<!-- Flex Container for Heading and Donut -->
+		<div class="flex w-full max-w-7xl space-x-40 mt-56">
+			<!-- Left Side: Welcome Text -->
+			<div class="flex-1 pr-24 pl-8 mt-8">
+				<Heading
+					heading="WELCOME TO MY PORTFOLIO"
+					subheading="On this website, you will learn about me and my projects."
+				/>
 			</div>
 
-			<!-- Right Side: Photo Slideshow -->
-			<div class="flex-1 bg-white shadow-lg rounded-lg p-6 min-h-custom">
-				<ImageSlideshow />
+			<!-- Right Side: Donut -->
+			<div class="relative w-48 h-48 flex items-center justify-center pr-52">
+				<Donut />
 			</div>
 		</div>
-	</section>
 
-	<!-- SVG Section -->
-	<section id="svg-section" class="w-full mt-52 text-primary relative text-lg">
-		<Swot/>
-	  </section>
-
-	  <section id='skills' class="w-full mt-52 text-primary relative text-lg">
-		<div class="flex justify-center text-text mt-48">
-			<SecondaryHeading heading="Technical Skills" />
-		  </div>
-
-		<Skills/>
+		<!-- Section for Waves (placed below heading and donut) -->
+		<section class="w-full mt-72 relative bg-background">
+			<Waves />
 		</section>
 
-		<section id="projects" class="w-full bg-gradient-to-b from-background to-primary">
+		<!-- Gradient div -->
+		<div
+			id="about"
+			class="content flex bg-primary w-full h-80 relative bg-gradient-to-b from-primary to-background"
+		></div>
+
+		<!-- About Me Section with Heading -->
+		<div id="about" class="mt-8 text-text">
+			<SecondaryHeading heading="About Me" />
+		</div>
+
+		<!-- About Me Component with Buttons -->
+		<section id="about" class="w-full flex justify-center items-start mt-20">
+			<div class="flex w-full max-w-7xl space-x-32 mt-12 items-stretch">
+				<!-- Left Side: About Me Text and Buttons -->
+				<div class="flex-1 bg-white shadow-xl rounded-lg p-6 min-h-custom">
+					<AboutMe />
+				</div>
+
+				<!-- Right Side: Photo Slideshow -->
+				<div class="flex-1 bg-white shadow-lg rounded-lg p-6 min-h-custom">
+					<ImageSlideshow />
+				</div>
+			</div>
+		</section>
+
+		<!-- SVG Section -->
+		<section id="svg-section" class="w-full mt-52 text-primary relative text-lg">
+			<Swot />
+		</section>
+
+		<section id="skills" class="w-full mt-52 text-primary relative text-lg">
+			<div class="flex justify-center text-text mt-48">
+				<SecondaryHeading heading="Technical Skills" />
+			</div>
+
+			<Skills />
+		</section>
+
+		<section
+			id="projects"
+			class="w-full bg-gradient-to-b from-background to-background via-primary via-65%"
+		>
 			<div class="flex justify-center text-text mt-32 mb-20">
 				<SecondaryHeading heading="Projects" />
-			  </div>
-		<Projects />
+			</div>
+			<Projects />
 		</section>
 
-	<p class="mt-52 pt-52">labas</p>
-	<slot />
-</main>
+		<section id="contact" class="w-full"></section>
+		<div class="flex justify-center text-text mt-32 mb-20">
+			<SecondaryHeading heading="Contact" />
+		</div>
+		<Contact />
+	</section>
 
+	<section class="w-full mt-52 relative bg-background">
+		<Waves />
+	</section>
+	<!-- Gradient div -->
+	<div
+		id="about"
+		class="content flex bg-primary w-full h-80 relative bg-primary"
+	></div>
+</main>
