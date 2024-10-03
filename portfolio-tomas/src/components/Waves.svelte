@@ -18,50 +18,11 @@
     <!--Waves end-->
   </div>
   <style>
-    body {
-      margin:0;
-    }
-    
-    h1 {
-      font-family: 'Lato', sans-serif;
-      font-weight:300;
-      letter-spacing: 2px;
-      font-size:48px;
-    }
-    p {
-      font-family: 'Lato', sans-serif;
-      letter-spacing: 1px;
-      font-size:14px;
-      color: #333333;
-    }
-    
     .header {
       position:relative;
       text-align:center;
       color:white; /* Keep the text color white */
       background-color: transparent; /* Make the header transparent */
-    }
-    
-    .logo {
-      width:50px;
-      fill:white;
-      padding-right:15px;
-      display:inline-block;
-      vertical-align: middle;
-    }
-    
-    .inner-header {
-      height:65vh;
-      width:100%;
-      margin: 0;
-      padding: 0;
-    }
-    
-    .flex { /*Flexbox for containers*/
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
     }
     
     .waves {
@@ -71,13 +32,6 @@
       margin-bottom:-7px; /*Fix for safari gap*/
       min-height:100px;
       max-height:150px;
-    }
-    
-    .content {
-      position:relative;
-      height:20vh;
-      text-align:center;
-      background-color: white;
     }
     
     /* Animation */
@@ -115,12 +69,6 @@
       .waves {
         height:40px;
         min-height:40px;
-      }
-      .content {
-        height:30vh;
-      }
-      h1 {
-        font-size:24px;
       }
     }
     </style>
