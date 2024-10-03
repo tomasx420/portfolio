@@ -13,7 +13,7 @@
 		<!-- Dynamic Content Sections -->
 		{#if currentSection === "intro"}
 			<p class="text-lg text-text leading-relaxed">
-				I’m a 21-year-old student from Lithuania, currently in my third year
+				My name is Tomas and I’m a 21-year-old student from Lithuania, currently in my third year
 				studying Information and Communication Technologies at HZ University in the
 				Netherlands. I’d describe myself as confident, humorous, and always open to
 				new experiences. I moved to the Netherlands not only for the education but

@@ -18,26 +18,26 @@
 	<slot />
 	<!-- Main Section with Heading and Donut -->
 	<section
-		class="min-h-screen bg-background flex flex-col items-center justify-center mt-8 pt-2"
-	>
-		<!-- Flex Container for Heading and Donut -->
-		<div class="flex w-full max-w-7xl space-x-40 mt-56">
-			<!-- Left Side: Welcome Text -->
-			<div class="flex-1 pr-24 pl-8 mt-8">
-				<Heading
-					heading="WELCOME TO MY PORTFOLIO"
-					subheading="On this website, you will learn about me and my projects."
-				/>
-			</div>
-
-			<!-- Right Side: Donut -->
-			<div class="relative w-48 h-48 flex items-center justify-center pr-52">
-				<Donut />
-			</div>
-		</div>
+	class="min-h-screen bg-background flex flex-col items-center justify-center mt-8 pt-2 w-full"
+  >
+	<!-- Flex Container for Heading and Donut -->
+	<div class="flex flex-col md:flex-row w-full max-w-7xl items-center justify-between px-4 md:px-8 mt-32">
+	  <!-- Left Side: Welcome Text -->
+	  <div class="flex-1 max-w-2xl">
+		<Heading
+		  heading="WELCOME TO MY PORTFOLIO"
+		  subheading="On this website, you'll learn about my journey, from my hobbies and strengths to my technical skills and the projects I've developed."
+		/>
+	  </div>
+  
+	  <!-- Right Side: Donut -->
+	  <div class="mt-8 md:mt-0 md:ml-8">
+		<Donut />
+	  </div>
+	</div>
 
 		<!-- Section for Waves (placed below heading and donut) -->
-		<section class="w-full mt-72 relative bg-background">
+		<section class="w-full mt-28 relative bg-background">
 			<Waves />
 		</section>
 

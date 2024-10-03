@@ -8,14 +8,14 @@
 					icon: "fa-brands fa-js-square",
 					description:
 						"Build dynamic web apps using modern JavaScript, integrate APIs, GPS, and maps.",
-					years: "3 years",
+					years: "2 years",
 				},
 				{
 					name: "TypeScript",
 					icon: "fa-solid fa-code",
 					description:
 						"Develop games and scalable apps using TypeScript and object-oriented programming principles.",
-					years: "1.5 years",
+					years: "1 years",
 				},
 				{
 					name: "Python",
@@ -41,14 +41,14 @@
 					icon: "fa-solid fa-layer-group",
 					description:
 						"Build reactive web applications with Svelte, optimized for user experience.",
-					years: "1.5 years",
+					years: "1 years",
 				},
 				{
 					name: "Next.js",
 					icon: "fa-solid fa-layer-group",
 					description:
 						"Build applications using Next.js to efficiently handle API requests and data fetching.",
-					years: "1 year",
+					years: "Few Months",
 				},
 				{
 					name: "Laravel",
@@ -73,7 +73,7 @@
 					icon: "fa-brands fa-docker",
 					description:
 						"Containerize websites and databases, deployg and manage containers for efficient hosting.",
-					years: "1 year",
+					years: "0.5 year",
 				},
 			],
 		},

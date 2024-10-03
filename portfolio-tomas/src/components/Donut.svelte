@@ -98,10 +98,13 @@
                                                                                
                                                                               
   <!-- Donut -->
-  <pre bind:this={donutRef} class="absolute mt-[190px] ml-[200px] sm:ml-[100px] md:ml-[300px] color-gradient"></pre>
-  
-  <style>
-    pre {
+<!-- Donut -->
+<div class="flex justify-center">
+  <pre bind:this={donutRef} class="relative mx-auto max-w-full overflow-hidden color-gradient"></pre>
+</div>
+
+<style>
+  pre {
     font-family: 'Courier New', monospace;
     white-space: pre;
     line-height: 1;
@@ -110,16 +113,32 @@
     overflow: hidden;
     color: black;
     animation: glow 1.5s ease-in-out infinite alternate;
-}
+    max-width: 100%; /* Prevents it from extending too far */
+    overflow-x: auto; /* Enables horizontal scrolling if needed */
+    margin: auto;
+  }
 
-@keyframes glow {
+  @keyframes glow {
     from {
-        text-shadow: 0 0 10px #48CFCB, 0 0 20px #48CFCB, 0 0 30px #48CFCB, 0 0 40px #48CFCB;
+      text-shadow: 0 0 10px #48CFCB, 0 0 20px #48CFCB, 0 0 30px #48CFCB, 0 0 40px #48CFCB;
     }
     to {
-        text-shadow: 0 0 5px #48CFCB, 0 0 10px #48CFCB, 0 0 15px #48CFCB, 0 0 20px #48CFCB;
+      text-shadow: 0 0 5px #48CFCB, 0 0 10px #48CFCB, 0 0 15px #48CFCB, 0 0 20px #48CFCB;
     }
-}
+  }
 
-  </style>
+  @media (max-width: 1768px) {
+    pre {
+      font-size: 16px;
+      transform: scale(0.9);
+    }
+  }
+
+  @media (max-width: 1556px) {
+    pre {
+      font-size: 12px;
+      transform: scale(0.9);
+    }
+  } 
+</style>
   
