@@ -13,8 +13,9 @@
 	import Contact from "../components/Contact.svelte";
 </script>
 
-<Header />
+
 <main class='bg-background'>
+	<Header />
 	<slot />
 	<!-- Main Section with Heading and Donut -->
 	<section
@@ -102,7 +103,6 @@
 	</section>
 	<!-- Gradient div -->
 	<div
-		id="about"
-		class="content flex bg-primary w-full h-80 relative bg-primary"
+		class="content flex bg-primary w-full h-40 relative bg-primary"
 	></div>
 </main>
