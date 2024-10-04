@@ -206,7 +206,6 @@ export const projects = [
             },
             { src: img_db, caption: "Database design for managing audit data" },
         ],
-        liveDemo: "https://udit-demo.example.com",
     },
 
     {
@@ -245,7 +244,6 @@ export const projects = [
                     "Component diagram, showing the API Gateway and its connections to various microservices",
             },
         ],
-        liveDemo: "https://fitconnect-demo.example.com",
     },
 
     {
