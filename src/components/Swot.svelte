@@ -1,5 +1,4 @@
 <script>
-
 	import SecondaryHeading from "./SecondaryHeading.svelte";
 	import SwotTable from "./SwotTable.svelte";
 

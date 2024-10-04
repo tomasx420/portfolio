@@ -1,5 +1,4 @@
 <script>
-
 	let currentSection = "intro"; // Default section
 
 	import { aboutMeSections } from "$lib/data.js"; //import text data
@@ -46,7 +45,6 @@
 	</div>
 </div>
 
-<!-- Custom Gradient Glow Effect CSS -->
 <style>
 	/* Gradient glow around the entire paragraph block */
 	.glow-effect {

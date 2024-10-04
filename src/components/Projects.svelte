@@ -1,9 +1,8 @@
 <script>
 	import { onMount } from "svelte";
 	import { Search } from "lucide-svelte";
-import { projects }  from "$lib/data.js"; //import data
+	import { projects } from "$lib/data.js"; //import data
 
-	
 	let currentImageIndices = projects.map(() => 0);
 	let slideIntervals = [];
 	let isModalOpen = false;

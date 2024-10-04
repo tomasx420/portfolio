@@ -52,7 +52,6 @@
 		<div id="about" class="mt-8 text-text">
 			<SecondaryHeading heading="About Me" />
 		</div>
-
 		<!-- About Me Component with Buttons -->
 		<section id="about" class="w-full flex justify-center items-start mt-20">
 			<div class="flex w-full max-w-7xl space-x-32 mt-12 items-stretch">
@@ -70,6 +69,7 @@
 
 		<!-- SVG Section -->
 		<section id="svg-section" class="w-full mt-52 text-primary relative text-lg">
+			<!-- header inside component -->
 			<Swot />
 		</section>
 
