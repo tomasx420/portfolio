@@ -18,7 +18,6 @@ import ic1 from "$lib/assets/ic/ic1.png";
 import ic2 from "$lib/assets/ic/ic2.png";
 import ic3 from "$lib/assets/ic/ic3.png";
 
-//about me section data
 export const aboutMeSections = {
     intro: `
       My name is Tomas and I’m a 21-year-old student from Lithuania, currently in my third year
@@ -49,9 +48,7 @@ export const aboutMeSections = {
       and I thrive in an environment where adaptation is key.
     `,
   };
-  
-  // Skill Categories for section "technical skills"
-  export const skillCategories = [
+    export const skillCategories = [
     {
         name: "Programming Languages",
         skills: [

@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from "svelte";
 	import { Search } from "lucide-svelte";
-	import { projects } from "$lib/data.js"; //import data
+	import { projects } from "$lib/data.js";
 
 	let currentImageIndices = projects.map(() => 0);
 	let slideIntervals = [];
@@ -77,20 +77,17 @@
 	<div class="mt-12 space-y-32">
 		{#each projects as project, projectIndex}
 			<div class="bg-white shadow-xl rounded-lg overflow-hidden relative">
-				<!-- Tag for type -->
 				<div
 					class="absolute top-0 right-0 bg-primary text-white py-1 px-3 rounded-bl-lg z-10"
 				>
 					{project.type}
 				</div>
 
-				<!-- Flex container for image and text -->
 				<div
 					class="h-[675px] flex flex-col md:flex-row {projectIndex % 2 === 0
 						? ''
 						: 'md:flex-row-reverse'}"
 				>
-					<!-- Image Section -->
 					<div class="w-full md:w-1/2 relative">
 						<div class="aspect-square">
 							<div
@@ -101,7 +98,6 @@
 									style="transform: translateX(-{currentImageIndices[projectIndex] *
 										100}%); width: {projects[projectIndex].images.length * 100}%;"
 								>
-									<!-- Image loop -->
 									{#each project.images as { src, caption }, i}
 										<div
 											class="min-w-full relative cursor-pointer group"
@@ -112,7 +108,7 @@
 												alt={`Project screenshot ${i + 1}`}
 												class="object-cover w-full h-full"
 											/>
-											<!-- Preview overlay on hover -->
+
 											<div
 												class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-30"
 											>
@@ -124,7 +120,6 @@
 									{/each}
 								</div>
 
-								<!-- Previous and Next buttons for sliding images -->
 								<button
 									class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-2"
 									on:click={() => {
@@ -168,7 +163,6 @@
 									</svg>
 								</button>
 
-								<!-- Caption -->
 								<div
 									class="absolute bottom-8 left-0 right-0 bg-black bg-opacity-50 text-white text-sm py-2 px-4"
 								>
@@ -177,7 +171,6 @@
 									</p>
 								</div>
 
-								<!-- Image indicators -->
 								<div
 									class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2"
 								>
@@ -198,31 +191,26 @@
 					<div class="w-full md:w-1/2 p-6 flex flex-col justify-start">
 						<h3 class="text-2xl font-bold text-gray-800 mb-4">{project.name}</h3>
 						<div class="space-y-4">
-							<!-- Description -->
 							<div>
 								<h4 class="text-lg font-semibold text-gray-700">Description</h4>
 								<p class="text-gray-600 leading-relaxed">{project.description}</p>
 							</div>
 
-							<!-- What I Learned -->
 							<div>
 								<h4 class="text-lg font-semibold text-gray-700">What I Learned</h4>
 								<p class="text-gray-600 leading-relaxed">{project.learnings}</p>
 							</div>
 
-							<!-- What I Developed -->
 							<div>
 								<h4 class="text-lg font-semibold text-gray-700">What I Developed</h4>
 								<p class="text-gray-600 leading-relaxed">{project.developed}</p>
 							</div>
 
-							<!-- Technologies Used -->
 							<div>
 								<h4 class="text-lg font-semibold text-gray-700">Technologies Used</h4>
 								<p class="text-gray-600">{project.technologies.join(", ")}</p>
 							</div>
 
-							<!-- Live Demo Button -->
 							{#if project.liveDemo}
 								<div>
 									<a
