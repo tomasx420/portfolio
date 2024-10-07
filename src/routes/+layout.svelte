@@ -47,10 +47,7 @@
 			:/
 		</div>
 		<h1 class="text-4xl mt-4">Oops!</h1>
-		<p class="text-xl mt-2 text-center">
-			This site is designed for larger screens. <br />
-			Please use a PC or a bigger device.
-		</p>
+		<p class="mt-2">This site is designed for larger screens.<br />Please use a device with a bigger screen.</p>
 	</div>
 {:else}
 	<main class="bg-background">
