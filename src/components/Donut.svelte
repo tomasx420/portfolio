@@ -29,11 +29,12 @@
 					z[k] = 0;
 				}
 
-				for (var j = 0; j < 6.28; j += 0.07) {
+				// Generate the ASCII frame
+				for (var j = 0; j < 6.28; j += 0.1) {
 					var ct = Math.cos(j);
 					var st = Math.sin(j);
 
-					for (var i = 0; i < 6.28; i += 0.02) {
+					for (var i = 0; i < 6.28; i += 0.05) {
 						var sp = Math.sin(i);
 						var cp = Math.cos(i),
 							h = ct + 2,
@@ -64,9 +65,16 @@
 			}
 
 			function startAsciiAnimation() {
-				setInterval(renderAsciiFrame, 50);
+				let frameCount = 0;
+				function animate() {
+					if (frameCount % 8 === 0) {
+						renderAsciiFrame();
+					}
+					frameCount++;
+					requestAnimationFrame(animate);
+				}
+				requestAnimationFrame(animate);
 			}
-
 			startAsciiAnimation();
 		})();
 	});
