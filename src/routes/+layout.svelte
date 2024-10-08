@@ -12,47 +12,40 @@
 	import Projects from "../components/Projects.svelte";
 	import Contact from "../components/Contact.svelte";
 	import { onMount } from "svelte";
+	import MobileWarning from "../components/MobileWarning.svelte";
+	import LoadingSpinner from "../components/LoadingSpinner.svelte";
 
-	let isMobile = false;
+    let isMobile = false;
+    let isLoading = true;
 
-	onMount(() => {
-		checkScreenSize();
-		window.addEventListener("resize", checkScreenSize);
+    onMount(() => {
+        // Simulate a loading delay
+        setTimeout(() => {
+            isLoading = false;
+        }, 2000); // Adjust this to however long the loading should take
 
-		return () => {
-			window.removeEventListener("resize", checkScreenSize);
-		};
-	});
+        checkScreenSize();
+        window.addEventListener("resize", checkScreenSize);
 
-	function checkScreenSize() {
-		if (window.innerWidth < 1024) {
-			isMobile = true;
-		} else {
-			isMobile = false;
-		}
-	}
+        return () => {
+            window.removeEventListener("resize", checkScreenSize);
+        };
+    });
+
+    function checkScreenSize() {
+        isMobile = window.innerWidth < 1024;
+    }
 </script>
 
-{#if isMobile}
-	<div
-		class="flex flex-col justify-center items-center h-screen bg-background text-text"
-	>
-		<div
-			class="text-9xl font-bold text-primary"
-			style="animation: pulse 2s infinite; 
-             transform-origin: center; 
-             text-shadow: 0 0 20px rgba(72, 207, 203, 0.6), 
-                          0 0 65px rgba(72, 207, 203, 0.4);"
-		>
-			:/
-		</div>
-		<h1 class="text-4xl mt-4">Oops!</h1>
-		<p class="text-xl mt-2 text-center">
-			This site is designed for larger screens. <br />
-			Please use a PC or a bigger device.
-		</p>
-	</div>
-{:else}
+<MobileWarning {isMobile} />
+
+<LoadingSpinner {isLoading} />
+
+{#if !isLoading}
+
+
+
+{#if !isMobile}
 	<main class="bg-background">
 		<Header />
 		<slot />
@@ -145,6 +138,7 @@
 		<!-- Gradient div -->
 		<div class="content flex bg-primary w-full h-40 relative bg-primary"></div>
 	</main>
+    {/if}
 {/if}
 
 <style>
