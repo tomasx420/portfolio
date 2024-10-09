@@ -206,6 +206,7 @@ export const projects = [
             },
             { src: img_db, caption: "Database design for managing audit data" },
         ],
+        githubUrl: "https://github.com/tomasx420/Oudit"
     },
 
     {
