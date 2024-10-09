@@ -1,10 +1,14 @@
 # Portfolio Website
 
-[![License](https://img.shields.io/badge/License-CC0-lightgray.svg?style=flat-square)](https://creativecommons.org/publicdomain/zero/1.0/)
-[![Latest release](https://img.shields.io/github/v/release/mhucka/readmine.svg?style=flat-square&color=b44e88&label=Latest%20release)](https://github.com/mhucka/readmine/releases)
-[![Mentioned in Awesome Awesome README](https://awesome.re/mentioned-badge-flat.svg)](https://github.com/matiassingers/awesome-readme)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+![Last Commit](https://img.shields.io/github/last-commit/tomasx420/portfolio.svg)
+![Built With](https://img.shields.io/badge/Built%20with-Svelte-orange.svg)
+[![Website](https://img.shields.io/badge/Website-live-red.svg)](https://tomas-portfolio.com)
 
 
+
+## Live Preview:
+### https://tomas-portfolio.com
 ## Table of contents
 
 * [Introduction](#introduction)
