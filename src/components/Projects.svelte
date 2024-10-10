@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from "svelte";
-	import { Search } from "lucide-svelte";
-	import { projects } from "$lib/data.js";
+	import { Search, Github } from "lucide-svelte";
+	import { projects } from "$lib/data.js"; //import data
 
 	let currentImageIndices = projects.map(() => 0);
 	let slideIntervals = [];
@@ -222,6 +222,17 @@
 										Live Demo
 									</a>
 								</div>
+							{/if}
+							{#if project.githubUrl}
+								<a
+									href={project.githubUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+									class="inline-flex items-center bg-gray-800 text-white font-semibold py-2 px-4 rounded-lg hover:bg-gray-700 transition-colors duration-300"
+								>
+									<Github class="mr-2" size={20} />
+									View on GitHub
+								</a>
 							{/if}
 						</div>
 					</div>

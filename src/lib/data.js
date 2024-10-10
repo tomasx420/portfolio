@@ -203,12 +203,13 @@ export const projects = [
             },
             { src: img_db, caption: "Database design for managing audit data" },
         ],
+        githubUrl: "https://github.com/tomasx420/Oudit"
     },
 
     {
         name: "FitConnect - Student Exercise Network",
         type: "university",
-        description: `I learned how to implement GPS integration and optimize for mobile responsiveness. I also gained experience in conducting user testing to refine the UX and create feedback loops. Additionally, I learned how to develop, adjust, and make microservices, how to design APIs, and how to set up a CI/CD pipeline.`,
+        description: `FitConnect is a mobile-friendly web app designed to help students connect through shared exercise activities. Users can either start or schedule events, such as a basketball session at a nearby court, allowing others to join and participate.`,
         learnings: `I learned how to implement GPS integration and optimize for mobile responsiveness. I also gained experience in conducting user testing to refine the UX and create feedback loops. Also, I learned how to set up a CI/CD pipeline.`,
         developed: `I primarily worked on integrating the map with GPS functionality and ensuring the app was responsive across various devices. Additionally, I worked on developing several microservices to support the app's functionalities.`,
         technologies: [
@@ -241,6 +242,7 @@ export const projects = [
                     "Component diagram, showing the API Gateway and its connections to various microservices",
             },
         ],
+        githubUrl: "https://github.com/tomasx420/FitConnect"
     },
 
     {
