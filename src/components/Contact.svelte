@@ -27,7 +27,7 @@
             <div class="space-y-4">
               <div class="flex items-center">
                 <Github class="w-6 h-6 text-primary mr-4" />
-                <a href="https://github.com/tomasx420" target="_blank" rel="noopener noreferrer" class="text-lg text-gray-700 hover:text-primary transition-colors">
+                <a href="https://github.com/tomasx420/portfolio" target="_blank" rel="noopener noreferrer" class="text-lg text-gray-700 hover:text-primary transition-colors">
                   github.com/tomasx420
                 </a>
               </div>
